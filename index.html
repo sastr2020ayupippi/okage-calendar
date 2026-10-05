@@ -8,10 +8,17 @@
 html,body{margin:0;padding:0;background:#fff;color:#222}
 body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
 main{max-width:760px;margin:0 auto;padding:12px 10px 28px}
-img{display:block;width:100%;height:auto;margin:0 auto}
+.calendar{position:relative;width:100%}
+.calendar img{display:block;width:100%;height:auto;margin:0 auto}
+.note-1010{position:absolute;left:91.3%;top:76.4%;transform:translate(-50%,0);color:#b64d46;font-weight:700;font-size:clamp(11px,2.05vw,16px);line-height:1.25;white-space:nowrap}
 </style>
 </head>
 <body>
-<main><img src="calender.png" alt="町屋割烹おかげ・sastR 営業日のご案内"></main>
+<main>
+  <div class="calendar">
+    <img src="calender.png" alt="町屋割烹おかげ・sastR 営業日のご案内">
+    <div class="note-1010">夜満席</div>
+  </div>
+</main>
 </body>
 </html>
