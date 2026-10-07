@@ -8,6 +8,10 @@
 html,body{margin:0;padding:0;background:#fff;color:#222}
 body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
 main{max-width:760px;margin:0 auto;padding:12px 10px 28px}
+.today{margin:0 0 14px;padding:20px 16px;border:1px solid #eee;border-radius:24px;text-align:center;background:#fff}
+.today-date{font-size:clamp(16px,3vw,22px);color:#777;margin-bottom:10px}
+.today-status{font-size:clamp(28px,6vw,42px);font-weight:700;letter-spacing:.08em}
+.today-note{font-size:clamp(13px,2.4vw,17px);color:#777;margin-top:10px}
 .calendar{position:relative;width:100%}
 .calendar img{display:block;width:100%;height:auto;margin:0 auto}
 .note-1010{position:absolute;left:91.3%;top:76.4%;transform:translate(-50%,0);color:#b64d46;font-weight:700;font-size:clamp(11px,2.05vw,16px);line-height:1.25;white-space:nowrap}
@@ -15,6 +19,11 @@ main{max-width:760px;margin:0 auto;padding:12px 10px 28px}
 </head>
 <body>
 <main>
+  <section class="today" aria-label="今日のおかげ">
+    <div class="today-date">今日のおかげ｜10/7（水）</div>
+    <div class="today-status">昼 休　　夜 休</div>
+    <div class="today-note">本日はお休みです。</div>
+  </section>
   <div class="calendar">
     <img src="calender.png" alt="町屋割烹おかげ・sastR 営業日のご案内">
     <div class="note-1010">夜満席</div>
